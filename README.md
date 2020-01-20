@@ -28,12 +28,14 @@ To confirm the module loaded correctly and created devices:
 ```
   $ lsmod | grep cdev
   cdev                   16384  0
+  
   $ dmesg 
   [26080.388784] cdev: Initializing module
   [26080.388786] cdev: Major and Minor numbers successfully assigned.
                  Major: 240       Minor: 0
   [26080.388810] cdev: Module class_create() success.
   [26080.388947] cdev: Device successfully added.
+  
   $ ls -la /dev | grep cdev
   crw-------   1 root root    240,   0 Jan 20 09:59 cdev
 ```
